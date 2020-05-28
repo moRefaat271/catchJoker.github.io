@@ -1,4 +1,5 @@
-
+var speed = 800,
+    myCounter = 0;
 function pos1() {
   //  $('.box1 ,.box2 ,.box3').click(function() {
         $('.box1 ,.box2 ,.box3').css({
@@ -7,41 +8,41 @@ function pos1() {
         });
     $('.box1').animate({
     top: '-240px',
-    });    
+    },speed);    
     $('.box1').animate({
         left: '240px',   
-    });
+    },speed);
     $('.box1').animate({
     top: '0px',
-    });
+    },speed);
     $('.box1').animate({
     left: '0px',
-    });
+    },speed);
     $('.box2').animate({
     top: '240px',
-    });    
+    },speed);    
     $('.box2').animate({
         left: '240px',   
-    });
+    },speed);
     $('.box2').animate({
     top: '0px',
-    });
+    },speed);
     $('.box2').animate({
     left: '0px',
-    });
+    },speed);
        
     $('.box3').animate({
         left: '-240px',   
-    });
+    },speed);
     $('.box3').animate({
     top: '240px',
-    });
+    },speed);
     $('.box3').animate({
     left: '0px',
-    });
+    },speed);
     $('.box3').animate({
     top: '0px',
-    }); 
+    },speed); 
 //    })
 }
 
@@ -54,35 +55,35 @@ function pos2() {
        
     $('.box1').animate({
         left: '240px',   
-    });
+    },speed);
     $('.box1').animate({
     top: '240px',
-    });
+    },speed);
     $('.box1').animate({
     left: '0px',
-    });
+    },speed);
     $('.box1').animate({
     top: '0px',
-    }); 
+    },speed); 
     $('.box2').animate({
     top: '240px',
-    });    
+    },speed);    
     $('.box2').animate({
         left: '240px',   
-    });
+    },speed);
     $('.box2').animate({
     top: '0px',
-    });
+    },speed);
     
          $('.box3').animate({
          top: '-240px',
-    });    
+    },speed);    
          $('.box3').animate({
         left: '-240px',    
-    });
+    },speed);
         $('.box3').animate({
         top: '0px',
-    });    
+    },speed);    
 //    })
 }
 
@@ -94,40 +95,40 @@ function pos3() {
         });
     $('.box1').animate({
     left: '240px',
-    });    
+    },speed);    
     $('.box1').animate({
         top: '-240px',   
-    });
+    },speed);
     $('.box1').animate({
     left: '240px',
-    });
+    },speed);
     $('.box1').animate({
     top: '0px',
-    });
+    },speed);
     $('.box1').animate({
         left: '240px',   
-    });
+    },speed);
          $('.box2').animate({
         top: '-240px',
-    });    
+    },speed);    
          $('.box2').animate({
         left: '-240px',
-    });
+    },speed);
         $('.box2').animate({
         top: '0px',
-    });
+    },speed);
     $('.box3').animate({
     top: '240px',
-    });    
+    },speed);    
     $('.box3').animate({
         left: '-240px',   
-    });
+    },speed);
     $('.box3').animate({
     top: '0px',
-    });
+    },speed);
          $('.box3').animate({
         left: '0px',    
-    })
+    },speed);
 //    })
 }
 
@@ -139,26 +140,26 @@ function pos4() {
         });
     $('.box1').animate({
         left: '240px',   
-    });
+    },speed);
     
     $('.box2').animate({
     top: '-240px',
-    });    
+    },speed);    
     $('.box2').animate({
         left: '240px',   
-    });
+    },speed);
     $('.box2').animate({
     top: '0px',
-    });
+    },speed);
              $('.box3').animate({
              top: '240px',
-    });    
+    },speed);    
              $('.box3').animate({
              left: '-480px',    
-    });
+    },speed);
              $('.box3').animate({
              top: '0px',
-    });    
+    },speed);    
 //    })
 }
 
@@ -170,25 +171,25 @@ function pos5() {
         });
      $('.box1').animate({
         top: '-240px',
-    });    
+    },speed);    
     $('.box1').animate({
         left: '480px',   
-    });
+    },speed);
      $('.box1').animate({
         top: '0px',
-    }); 
+    },speed); 
     $('.box2').animate({
     top: '240px',
-    });    
+    },speed);    
     $('.box2').animate({
         left: '-240px',   
-    });
+    },speed);
     $('.box2').animate({
     top: '0px',
-    });
+    },speed);
     $('.box3').animate({
      left: '-240px',    
-    })
+    },speed);
 //    })
 }
 function pos6() {
@@ -199,45 +200,51 @@ function pos6() {
         });
     $('.box1').animate({
         top: '-240px',
-    });    
+    },speed);    
     $('.box1').animate({
         left: '480px',
-    });
+    },speed);
     $('.box1').animate({
         top: '0px',
-    });    
+    },speed);    
        
     $('.box2').animate({
         left: '240px',   
-    });
+    },speed);
     $('.box2').animate({
     top: '240px',
-    });
+    },speed);
     $('.box2').animate({
     left: '0px',
-    });    
+    },speed);    
         $('.box2').animate({
          top: '0px',
-    }) 
+    },speed); 
         
             $('.box3').animate({
             top: '240px',
-    })    
+    },speed);    
             $('.box3').animate({
             left: '-480px',    
-    })
+    },speed);
             $('.box3').animate({
             top: '0px',
-    })    
+    },speed);    
             
 //    })
 }
 var a = [pos1, pos2 ,pos3 ,pos4 ,pos5 ,pos6];
 
-console.log(a[Math.floor(Math.random()*a.length)]);
 
 document.getElementById('b').onclick = function () {
     'use strict';
+     speed = speed - 40 ;
+    if (speed == 40) {
+        speed = speed + 40 ;
+    }
+    myCounter = myCounter + 1 ;
+    console.log(speed);
+    document.getElementById('count').innerHTML = myCounter;
 for (var i = 0 ; i < 300; i++) {
 var posI = a[Math.floor(Math.random()*a.length)];
 break;
@@ -264,6 +271,7 @@ break;
 
 document.getElementById('f').onclick = function () {
     'use strict';
+   speed = speed +40 ;
     document.getElementById('trials').removeChild(document.getElementById('trials').firstElementChild);
    $(document).ready(function () {
        $('.box1 ,.box2 ,.box3').css({
@@ -296,6 +304,7 @@ document.getElementById('f').onclick = function () {
 };
 document.getElementById('c').onclick = function () {
     'use strict';
+    speed = speed +40 ;
    document.getElementById('trials').removeChild(document.getElementById('trials').firstElementChild); 
    $(document).ready(function () {
        $('.box1 ,.box2 ,.box3').css({
