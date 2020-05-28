@@ -1,4 +1,4 @@
-var speed = 800,
+var speed = 920,
     myCounter = 0;
 function pos1() {
   //  $('.box1 ,.box2 ,.box3').click(function() {
@@ -239,7 +239,7 @@ var a = [pos1, pos2 ,pos3 ,pos4 ,pos5 ,pos6];
 document.getElementById('b').onclick = function () {
     'use strict';
      speed = speed - 40 ;
-    if (speed == 40) {
+    if (speed == 120) {
         speed = speed + 40 ;
     }
     myCounter = myCounter + 1 ;
@@ -314,7 +314,7 @@ document.getElementById('c').onclick = function () {
     $(document).ready(function () {
         $('.container').fadeOut(1000,function () {
             var  over = document.createElement('div'),
-         text = document.createTextNode('Game Over');
+         text = document.createTextNode('Game Over Fatima');
                                         
         over.appendChild(text);
         document.body.appendChild(over);
