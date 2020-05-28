@@ -3,7 +3,7 @@ function pos1() {
   //  $('.box1 ,.box2 ,.box3').click(function() {
         $('.box1 ,.box2 ,.box3').css({
             position: "relative",
-            backgroundImage: 'url(../imgs/4.jpg)',
+            backgroundImage: 'url(imgs/4.jpg)',
         });
     $('.box1').animate({
     top: '-240px',
@@ -49,7 +49,7 @@ function pos2() {
   //  $('.box1 ,.box2 ,.box3').click(function() {
         $('.box1 ,.box2 ,.box3').css({
             position: "relative",
-            backgroundImage: 'url(../imgs/4.jpg)',
+            backgroundImage: 'url(imgs/4.jpg)',
         });
        
     $('.box1').animate({
@@ -90,7 +90,7 @@ function pos3() {
 //    $('.box1 ,.box2 ,.box3').click(function() {
         $('.box1 ,.box2 ,.box3').css({
             position: "relative",
-            backgroundImage: 'url(../imgs/4.jpg)',
+            backgroundImage: 'url(imgs/4.jpg)',
         });
     $('.box1').animate({
     left: '240px',
@@ -135,7 +135,7 @@ function pos4() {
   //  $('.box1 ,.box2 ,.box3').click(function() {
         $('.box1 ,.box2 ,.box3').css({
             position: "relative",
-            backgroundImage: 'url(../imgs/4.jpg)',
+            backgroundImage: 'url(imgs/4.jpg)',
         });
     $('.box1').animate({
         left: '240px',   
@@ -166,7 +166,7 @@ function pos5() {
   //  $('.box1 ,.box2 ,.box3').click(function() {
         $('.box1 ,.box2 ,.box3').css({
             position: "relative",
-            backgroundImage: 'url(../imgs/4.jpg)',
+            backgroundImage: 'url(imgs/4.jpg)',
         });
      $('.box1').animate({
         top: '-240px',
@@ -195,7 +195,7 @@ function pos6() {
    // $('.box1 ,.box2 ,.box3').click(function() {
         $('.box1 ,.box2 ,.box3').css({
             position: "relative",
-            backgroundImage: 'url(../imgs/4.jpg)',
+            backgroundImage: 'url(imgs/4.jpg)',
         });
     $('.box1').animate({
         top: '-240px',
@@ -294,7 +294,6 @@ document.getElementById('f').onclick = function () {
 };
 });
 };
-console.log(document.getElementById('trials').firstElementChild);
 document.getElementById('c').onclick = function () {
     'use strict';
    document.getElementById('trials').removeChild(document.getElementById('trials').firstElementChild); 
@@ -330,4 +329,3 @@ document.getElementById('c').onclick = function () {
 };
    });
 }; 
-console.log(document.getElementById('trials').childNodes.length);
