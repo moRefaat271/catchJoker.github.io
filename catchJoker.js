@@ -254,7 +254,7 @@ break;
         'use strict';
         $(document).ready(function () {
        $('.box1 ,.box2 ,.box3').css({
-        backgroundImage: 'url(../imgs/4.jpg)',   
+        backgroundImage: 'url(imgs/4.jpg)',   
     });
         });
     },100);
